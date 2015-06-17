@@ -1,4 +1,4 @@
-# stash stream server side script
+# Stash stream python script
 
 This script provides an easy way to see stash git commits in your JIRA activity stream.
 It relies on the web hooks plugin (or any other way to call an URL on every commit)
@@ -7,6 +7,8 @@ It relies on the web hooks plugin (or any other way to call an URL on every comm
 
 The script needs python 2.7 with urllib2, requests, datetime, logging and dateutil. 
 It has to be callable by a web server, e.g. Apache's httpd via cgi. 
+
+On the stash side you need the [Web Post Receive Hooks Plugin](https://marketplace.atlassian.com/plugins/com.atlassian.stash.plugin.stash-web-post-receive-hooks-plugin)
 
 Put it in a folder served by your httpd, e.g. /var/www/stashstream/. 
 Add the following to your Apache configuration, e.g. a VirtualHost: 
@@ -22,7 +24,7 @@ Add the following to your Apache configuration, e.g. a VirtualHost:
 
 # Configuration in Stash
 
-In Stash for every repo to appear you need to enable the Web Hooks Plugin
+In Stash for every repo to appear you need to enable the Web Post Receive Hooks Plugin
 and point it to the URL serving stashstream.py:
 
 ![Stash configuration](stash-screenshot.png)
