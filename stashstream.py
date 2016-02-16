@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Stash Stream server side script
-# 2015 by Christian Loosli, IT Services of Biel
+# 2015 by Christian Loosli
 # Licensed under MIT License, see Copying.txt
 
 import os

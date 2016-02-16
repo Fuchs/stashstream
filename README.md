@@ -3,6 +3,11 @@
 This script provides an easy way to see stash git commits in your JIRA activity stream.
 It relies on the web hooks plugin (or any other way to call an URL on every commit)
 
+WARNING: This script is currently not actively developed or maintained. 
+It was created for an organisation that no longer does or uses FOSS, so it was moved. 
+Feel free to use it at your own risk, or to fork and improve it. 
+I hope it is helpful anyway.
+
 # Installation
 
 The script needs python 2.7 with urllib2, requests, datetime, logging and dateutil. 
